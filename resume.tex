@@ -1,0 +1,170 @@
+%-------------------------
+% Resume in Latex
+% Author : Sooji Kim
+% Website: https://github.com/skim1225/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/sooji-kim12/}{\Large Sooji Kim}} & Email: \href{mailto:kim.sooji1225@gmail.com}{kim.sooji1225@gmail.com}\\
+  \href{https://www.linkedin.com/in/sooji-kim12/}{https://www.linkedin.com/in/sooji-kim12/} & Mobile: 206-913-1847 & \href{https://github.com/skim1225}{https://github.com/skim1225}\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington}{Seattle, WA}
+      {Molecular Biology B.S. (In-major GPA: 3.62)}{Sept. 2018 -- June. 2022}
+      \resumeItemListStart
+        \resumeItem{Programming Coursework}
+          {Web Programming: 3.9, Genomic Informatics: 3.9, Intro Probability and Stats: 4.0, Computer Programming I: AP, Computer Programming I: AP}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------CERTIFICATES---------------
+\section{Certificates}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Coursera}{Online}
+      {Advanced React, Django Web Framework, Version Control, Intro to Databases for Back-End Dev}{Dec 2022 - Jan 2023}
+    \resumeSubheading
+        {Free Code Camp}{Online}
+        {Responsive Web Design}{Feb 2023}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Highland Pharmacy}{Edmonds, WA}
+      {Pharmacy Assistant}{June 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Revamped pharmacy workflow}
+          {Optimized the prescription filling workflow by increasing pharmacy assistant efficiency by restructuring generic and brand name drug inventory organization.}
+        \resumeItem{Liaised between allied health professionals}
+          {Seamlessly integrated patient care from refill request to medication pickup by answering phone calls and refilling prescriptions or liaising with prescribers' offices and insurance companies to fulfill patients' needs.}
+        \resumeItem{Cost Savings}
+            {Decreased pharmacy's costs and increased profit margins by monitoring drug price increases vs. insurance compensation daily and submitting price adjustment documents when necessary.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {COPE (Volunteer)}{Seattle, WA}
+      {Health Scholar}{June 2019 - Aug 2021}
+      \resumeItemListStart
+        \resumeItem{HCAHPS}
+          {Improved Swedish Medical Center's HCAHPS survey results by advocating for patient care by answering call lights and promptly responding to patient requests or delegating issues to appropriate personnel.}
+        \resumeItem{Mentorship}
+          {Mentored junior health scholars by developing their confidence and knowledge in healthcare by answering questions and monitoring their duties.}
+        \resumeItem{Cultural Competency}
+          {Utilized Korean and Spanish language speaking skills to improve healthcare outcomes for non-English speaking patients by translating patients' needs to the patient care team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Seattle Music Partners (Volunteer)}{Seattle, WA}
+      {Cello Mentor}{Sept 2017 - Aug 2018}
+      \resumeItemListStart
+        \resumeItem{Equity}
+          {Expanded access to music education for students in low income and majority non-white schools by developing personalized music curriculum and providing private lessons which include music theory and performance.}
+        \resumeItem{Mentorship}
+          {Mentored young musicians by leading group discussions about equity and anti-racism and worked on developing work ethic and grit through practice.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{API}
+      {REST API project with server-side code, client-side data fetching using JSON data,}
+    \resumeSubItem{Buzzfeed Quiz Clone}
+      {A buzzfeed style quix built using Typescript and Node.js mini back-end.}
+    \resumeSubItem{Physics Based Action Game}
+      {Leverages Javascript, CSS3, and HTML canvas to animate game sprites, implement collision detection, and program enemy AI.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, Python, Javascript, SQL}
+     \hfill
+     \textbf{Technologies}{:  React, Bootstrap, REST API, npm, Flask}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
